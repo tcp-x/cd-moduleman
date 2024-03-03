@@ -1,0 +1,40 @@
+- modman:
+  - module list installed
+  - module list all (mark installed in the list)
+    - this would be a corpdesk webserver that host a distibuted database of plugin info (no files...just info). 
+    - All source files are reference from their github repositories
+    - Standards for publishing include automatated test against all public functons
+    - Some input for pretesting are designed and executed corpdesk auto validators
+    - automated tests against circular dependency
+    - automated tests against concurrency locks
+    - Versioning standards based on github tagging just as specified in Go plugin specs
+  - module info
+    - license
+    - version
+    - statistics
+    - install date
+    - number of users
+    - publisher
+  - module configure
+  - module statistics
+  - module instal
+    - progress bar
+  - module uninstall
+
+publish cd module:
+- plugin developers roles
+    - repository authentication process for registration
+    - register github url within established standards (max-size, )
+    - sign licensce agreement
+    - sign kyc
+- corpdesk publishers roles
+    - auto validate plugins based on accepted standards
+- consumer responsibilities
+    - check source codes
+    - use corpdesk to automate cloning, 
+    - compiling 
+    - installation
+    - sign license agreement
+- corpdesk would then be responsible for 
+  - register github url within established standards (max-size, )
+- develop online repository
