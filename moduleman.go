@@ -39,7 +39,7 @@ func Update(data string) string {
 /*
 Update is used by developers or modulemanager to update modules data
   - get the latest tag:
-  - git ls-remote --tags https://github.com/georemo/cd-core.git
+  - git ls-remote --tags https://github.com/tcp-x/cd-core.git
   - version
 */
 func Upgrade(data string) string {

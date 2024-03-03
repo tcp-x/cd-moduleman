@@ -7,7 +7,7 @@ Publish is used by developers to register module
   - get url
     git config --get remote.origin.url
   - get the latest tag:
-  - git ls-remote --tags https://github.com/georemo/cd-core.git
+  - git ls-remote --tags https://github.com/tcp-x/cd-core.git
   - tag and push plugin project
   - go mod tidy
     git add <go-filenam>
@@ -15,7 +15,7 @@ Publish is used by developers to register module
     git tag v0.0.1
     git push origin v0.0.1
   - get the latest tag to confirm update at github:
-  - git ls-remote --tags https://github.com/georemo/cd-core.git
+  - git ls-remote --tags https://github.com/tcp-x/cd-core.git
   - module name
   - Standards:
   - auto test
