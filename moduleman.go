@@ -2,14 +2,12 @@ package main
 
 import "fmt"
 
-type module string
-
 /*
 Info get details for specified module
   - module name
   - version
 */
-func (controller module) Info(data string) string {
+func Info(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := data
 	return resp
@@ -21,7 +19,7 @@ Get is used to get module data
   - details of specific module
   - arbritrary query of module database
 */
-func (controller module) Get(data string) string {
+func Get(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"
 	return resp
@@ -32,7 +30,7 @@ Update is used by developers or modulemanager to update modules data
   - module name
   - version
 */
-func (controller module) Update(data string) string {
+func Update(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"
 	return resp
@@ -44,7 +42,7 @@ Update is used by developers or modulemanager to update modules data
   - git ls-remote --tags https://github.com/tcp-x/cd-core.git
   - version
 */
-func (controller module) Upgrade(data string) string {
+func Upgrade(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"
 	return resp
@@ -73,7 +71,7 @@ Install is used by module consumers to install module to corpdesk system
 
   - version
 */
-func (controller module) Install(data string) string {
+func Install(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"
 	return resp
@@ -84,7 +82,7 @@ Uninstall is used by module consumer to uninstall module
   - module name
   - version
 */
-func (controller module) Uninstall(data string) string {
+func Uninstall(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"
 	return resp
@@ -95,7 +93,7 @@ Uninstall is used by module consumer to uninstall module
   - module name
   - version
 */
-func (controller module) Block(data string) string {
+func Block(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"
 	return resp
@@ -106,7 +104,7 @@ Expunge is used by module consumer to uninstall module
   - module name
   - version
 */
-func (controller module) ModEnable(data string) string {
+func ModEnable(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"
 	return resp
@@ -117,10 +115,8 @@ Expunge is used by module consumer to uninstall module
   - module name
   - version
 */
-func (controller module) ModDisable(data string) string {
+func ModDisable(data string) string {
 	fmt.Println("User::Auth()/input data:", data)
 	resp := "{name:User, version:0.0.7 publisher: \"EMP Services Ltd\"}"
 	return resp
 }
-
-var Module module
