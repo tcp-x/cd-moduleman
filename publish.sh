@@ -4,7 +4,7 @@ git ls-remote --tags https://github.com/tcp-x/cd-moduleman.git
 # cd-cli plugin compile 
 go build -buildmode=plugin -o Moduleman.so
 # set latest version
-Version="v0.0.2"
+Version="v0.0.3"
 go mod tidy
 git submodule update --remote
 git add go.mod modulenam.go cd-obj.go repo.go repo-tag.go Moduleman.so
