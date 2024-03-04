@@ -12,7 +12,7 @@ cd ..
 
 # go build -buildmode=plugin -o Moduleman.so
 # set latest version
-Version="v0.0.6"
+Version="v0.0.7"
 go mod tidy
 git submodule update --remote
 git add go.mod moduleman/moduleman.go cd-obj/cd-obj.go repo/repo.go repo/repo-tag.go plugins/Moduleman.so plugins/Repo.so plugins/CdObj.so
